@@ -34,3 +34,12 @@ What does it do
 This example extension adds a new column to the backend users module. The new column renders
 a nested list of backend user groups for each user.
 To support infinite nesting, a new partial is introduced that renders the actual group and any subgroups.
+
+LICENSE
+=======
+
+.. code::
+
+	To the extent possible under law, Philipp Gampe has waived all copyright and related or neighboring rights to "Change Extbase Backend Modules". This work is published from: Germany
+
+	http://creativecommons.org/publicdomain/zero/1.0/
