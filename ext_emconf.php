@@ -1,7 +1,7 @@
 <?php
 
 /***************************************************************
- * Extension Manager/Repository config file for ext "pgampe_bonnvolley".
+ * Extension Manager/Repository config file for ext "extendBeModules".
  *
  * Auto generated 06-04-2013 20:58
  *
@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array (
 	'title' => 'Extend Backend Modules',
-	'description' => 'This extension shows howto easily extend extbase based backend modules. This example shows the usergroups of backend users in the list view of the backend users module.',
+	'description' => 'This extension shows how to easily extend extbase backend modules. This example shows the user groups of backend users in the list view of the backend users module.',
 	'category' => 'backend',
 	'author' => 'Philipp Gampe',
 	'author_email' => 'philipp.gampe@typo3.org',
