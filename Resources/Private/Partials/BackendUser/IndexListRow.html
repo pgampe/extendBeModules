@@ -11,6 +11,13 @@
 	</td>
 	<td>{backendUser.realName}</td>
 	<td>
+		<ul class="no-bullet">
+			<f:for each="{backendUser.BackendUserGroups}" as="backendUserGroup">
+				<f:render partial="BackendGroup/GroupList" arguments="{backendUserGroup: backendUserGroup}" />
+			</f:for>
+		</ul>
+	</td>
+	<td>
 		<f:link.action
 			action="addToCompareList"
 			arguments="{uid: backendUser.uid}"

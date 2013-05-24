@@ -1,5 +1,6 @@
 module.tx_beuser {
-	settings {
-			
+	view {
+		partialRootPath = EXT:extendBeModules/Resources/Private/Partials/
+		templateRootPath = EXT:extendBeModules/Resources/Private/Templates/
 	}
 }

@@ -1,0 +1,22 @@
+{namespace bu = TYPO3\CMS\Beuser\ViewHelpers}
+
+<li>
+	<a href="#"
+		onClick="showClickmenu('be_groups', '{backendUserGroup.uid}', '1', '', '', ''); return false;"
+		title="id={backendUserGroup.uid}"
+	>
+	<bu:spriteIconForRecord table="be_users" object="{backendUserGroup}" />
+	</a>
+	{backendUserGroup.title}
+	<a href="alt_doc.php?edit[be_users][{backendUserGroup.uid}]=edit&returnUrl={returnUrl}">
+		<span class="t3-icon t3-icon-actions t3-icon-actions-document t3-icon-document-open">&nbsp;</span>
+	</a>
+	<br />
+	<f:if condition="backendUserGroup.subGroups">
+		<ul class="no-bullet" style="padding-left: 12px">
+			<f:for each="{backendUserGroup.subGroups}" as="subGroup">
+				<f:render partial="BackendGroup/GroupList" arguments="{backendUserGroup: subGroup}" />
+			</f:for>
+		</ul>
+	</f:if>
+</li>
