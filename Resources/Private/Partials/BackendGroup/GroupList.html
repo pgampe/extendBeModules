@@ -15,7 +15,7 @@
 	<f:if condition="backendUserGroup.subGroups">
 		<ul class="no-bullet" style="padding-left: 12px">
 			<f:for each="{backendUserGroup.subGroups}" as="subGroup">
-				<f:render partial="BackendGroup/GroupList" arguments="{backendUserGroup: subGroup}" />
+				<f:render partial="BackendGroup/GroupList" arguments="{backendUserGroup: subGroup, returnUrl: returnUrl}" />
 			</f:for>
 		</ul>
 	</f:if>
